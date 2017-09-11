@@ -24,9 +24,11 @@ $cfg['Servers'][$i]['AllowNoPassword'] = true;
 $cfg['Lang'] = '';
 
 /* Bind to the localhost ipv4 address and tcp */
-$cfg['Servers'][$i]['host'] = '127.0.0.1';
-$cfg['Servers'][$i]['connect_type'] = 'tcp';
-$cfg['Servers'][$i]['port'] = '3307';
+$cfg['Servers'][$i]['host'] = 'mysql';
+/*$cfg['Servers'][$i]['connect_type'] = 'tcp';*/
+$cfg['Servers'][$i]['compress'] = false;
+$cfg['Servers'][$i]['AllowNoPassword'] = false;
+$cfg['Servers'][$i]['port'] = '3306';
 
 /* User for advanced features */
 $cfg['Servers'][$i]['controluser'] = 'pma';
